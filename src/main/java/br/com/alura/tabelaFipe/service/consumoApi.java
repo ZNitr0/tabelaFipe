@@ -16,11 +16,9 @@ public class consumoApi {
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
 
